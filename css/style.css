@@ -264,7 +264,7 @@ body{
 .site-main .about-area .certification{
     background: #ffffff10;
     box-shadow: var(--box-shadow);
-    margin: 3rem 0rem;
+    margin: 1rem 0rem;
 }
 
 .site-main .about-area .certification .certification-img{
