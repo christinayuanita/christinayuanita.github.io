@@ -1,0 +1,331 @@
+
+/* import fonts from fonts.css file */ 
+@import url(./fonts.css);
+
+
+/* css variables */ 
+@import url(./partials/_variables.css);
+
+/* import global styling */ 
+@import url(./partials/_global.css);
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    background-image: url('../img/body-bg.png');
+    /* background-size: 100%; */
+    /* background-repeat: repeat; */
+}
+
+/* start navigation */ 
+
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar{
+    padding: 1rem 20rem ;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1.2rem;
+    color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* end navigation */ 
+
+/* Banner Area */ 
+
+.site-main .site-banner .site-title h3{
+    padding-top: 25%;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.site-main .site-banner .site-title h3::after{
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h2{
+    font-size: 2.5rem;
+}
+
+.site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+.site-main .site-banner .banner-image{
+    border-radius: 50%;
+}
+
+
+/* End Banner Area */ 
+
+/* Start About Area */ 
+
+.site-main .about-area{
+    padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 35px/ 60px var(--roboto);
+    letter-spacing: 15px;
+}
+
+.site-main .about-area {
+    padding: 0% 4%;
+}
+
+.site-main .about-area .about-title .paragraph > p{
+    padding: .4rem 0;
+}
+
+.site-main .about-area .about-image{
+    margin-top: 10%;
+}
+
+.light-blue-text.text-darken-3 {
+    color: #0277bd !important;
+}
+
+.blue-text.text-darken-3 {
+    color: #1565C0 !important;
+}
+
+.card{
+    margin-top: 5%;
+    box-shadow: 0px 2px 5px 0px rgba(57, 56, 61, 0.205);
+}
+
+.card:hover{
+    box-shadow: var(--box-shadow);
+    transform: scale(2rem);
+    transition-duration: 0.5s;
+}
+
+.card-body a:hover {
+    opacity: 2;
+    text-decoration: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--primary-color);
+    /* border-color: #007bff; */
+}
+
+/* End About Area */
+
+/* Start Contact Area */
+
+
+.site-main .contact-area{
+    padding: 0rem 2rem;
+}
+
+/*  */
+
+
+/* Skill Area */ 
+
+.site-main .skill-area{
+    padding: 7rem 2rem;
+}
+
+.site-main .skill-area .skill-title{
+    padding: 0 14rem;
+}
+
+.site-main .skill-area .skill-title h1{
+    font-size: 35px;
+}
+
+.site-main > .skill-area .skill{
+    background: rgba(248, 252, 253, 0.973);
+    /* background: #ffffff10; */
+    /* box-shadow: var(--box-shadow); */
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+}
+
+.site-main > .skill-area .skill:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.site-main > .skill-area .skill a:hover{
+    text-decoration: none;
+}
+
+.pb-4, .py-4 {
+    padding: 0.5rem !important;
+}
+
+.skillType{
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+/* End Services Area */ 
+
+
+/* Project Area */ 
+
+.site-main .project-area{
+    padding: 4rem 0;
+}
+
+.site-main .project-area .title-text{
+    margin-bottom: 5%;
+}
+
+.site-main .project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--roboto);
+    text-transform: uppercase;
+}
+
+.site-main .project-area .button-group button + button{
+    padding-left: 3rem;
+}
+
+.site-main .project-area .grid .our-project > .title h4{
+    font: normal 700 25px/12px var(--roboto);
+}
+
+.site-main .project-area .grid .our-project .img a:hover img{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    margin-right: 5%;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
+.my-project:hover{
+    transition: all 0.3s ease-in-out;
+    box-shadow: var(--box-shadow);
+}
+
+.my-project .test-popup-link{
+    transition: all 0.3s ease-in-out;
+}
+
+.owl-carousel{
+    transition-duration: 1s !important;
+}
+
+
+
+/* End Project Area */ 
+
+
+/* About Me */ 
+
+.site-main .about-area .about-title p{
+    padding: 1rem 7rem;
+}
+
+.site-main .about-area .certification{
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0rem;
+}
+
+.site-main .about-area .certification .certification-img{
+    padding: 2rem;
+}
+
+.site-main .about-area .certification .about-certification{
+    padding-top: 2rem;
+}
+
+.site-main .about-area .certification .about-certification h4{
+    font: normal 500 21px/ 20px var(--roboto);
+}
+
+.site-main .about-area .certification .about-certification p{
+    font-size: 14px;
+}
+
+.site-main .about-area .owl-carousel .owl-item{
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+.site-main .about-area .owl-carousel .owl-dots .owl-dot.active span{
+    background: var(--primary-color);
+    width: 12px;
+    height: 12px;
+}
+
+i.large{
+    font-size: 6rem;
+}
+
+/* End About Me */ 
+ 
+
+/* Footer Area */ 
+
+footer.footer-area{
+    padding: 5rem 0;
+    background: url(../img/footer-bg.png) no-repeat;
+}
+
+footer.footer-area .social h5{
+    font: normal 500 23px/ 30px var(--roboto);
+}
+
+footer.footer-area .social a > i{
+    font-size:22px;
+    padding: 2rem;
+    color: var(--border-color);
+}
+
+footer.footer-area .social a:hover > i{
+    color: var(--primary-color);
+}
+
+footer.footer-area .site-logo{
+    width: 5px;
+}
+
+
+/* End Footer */ 
